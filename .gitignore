@@ -1,0 +1,33 @@
+# 忽略常见的编译产物
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/*.o
+/*.obj
+/*.exe
+/*.out
+/*.a
+/*.so
+/*.dll
+/*.lib
+/*.pdb
+/*.mod
+*.user
+*.log
+
+# 忽略VSCode工作区设置
+.vscode/
+
+# 忽略所有可执行文件（无扩展名，且有可执行权限）
+# 仅适用于常见的构建输出目录和根目录
+*.exe
+*.out
+*.app
+*.bin
+
+# 忽略所有没有扩展名的可执行文件（常见于Linux/Unix）
+# 只排除文件，不排除目录
+*
+!*/ 
+!*.*
