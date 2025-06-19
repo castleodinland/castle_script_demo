@@ -1,0 +1,15 @@
+{
+    "name": "C++ Hello World",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+    ],
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libboost-all-dev libfmt-dev && make"
+}
